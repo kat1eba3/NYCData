@@ -5,30 +5,73 @@
   src: url("./fonts/MyCustomFont.ttf");
 }
 
+body {
+  background-image: url('imgs/electronics_background.png');
+  background-size: cover; 
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
 h1 {
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 36px;
   font-family: "reross-quadratic", sans-serif;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+  
+}
 
-  }
-
-  .circle {
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    height: 250px;
-    border-radius: 50%; 
-    background-color: transparent; /* Choose your desired color */
-    border-color: black;
-    border: 2px solid black; 
-    z-index: -1; 
-    justify-content: center;
+a {
+  text-decoration: none;
+  color: inherit; 
 }
 
 
+.circle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 250px;
+  border-radius: 50%; 
+  background-color: transparent; 
+  border: 2px solid black; 
+  z-index: 0; 
+
+}
+
+
+.title {
+  position: absolute;
+  top: 0%; 
+  left:01%; 
+  text-align: center;
+  font-size: 24px;
+  font-family: "reross-quadratic", sans-serif;
+  color: #A0ADBB;
+  z-index: 1; 
+}
+
+.title2 {
+  position: absolute;
+  top: 0%; /* Adjust as needed */
+  right: 0%; /* Adjust as needed */
+  text-align: center;
+  font-size: 18px;
+  font-family: "reross-quadratic", sans-serif;
+  color: #616a74;
+  z-index: 1; 
+}
+
+.title2 {
+  max-width: 300px; /* Set the maximum width to 400 pixels */
+  width: 100%; /* Allow the width to shrink within the maximum limit */
+}
